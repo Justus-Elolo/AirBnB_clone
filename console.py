@@ -66,3 +66,35 @@ class HBNBCommand(cmd.Cmd):
             print(msg[5])
             return 1
         return 0
+
+      def handle_empty_line(self, line):
+        """
+        Eliminate any empty line
+        """
+        return False
+
+      def do_EOF(self, line):
+        """
+        Quit command line interpretor with CTRL+D
+        Input argument for quitting
+        """
+        def do_quit(self, line):
+            """
+            Handles quit command
+            """
+             def do_create(self, line):
+                 """
+                 Creates a new instance of a class  and prints the new instance
+                 """
+                  if (self.my_errors(line, 1) == 1):
+            return
+        args = line.split(" ")
+ """
+        args[0] contains class name, create new instance
+        of that class updates 'updated_at' attribute,
+        and saves into JSON file
+        """
+         obj = eval(args[0])()
+        obj.save()
+
+        print(obj.id)
