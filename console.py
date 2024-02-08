@@ -16,16 +16,24 @@ from models.city import city
 
 class HBNBCommand(cmd.Cmd):
     """Custom console class"""
-    prompt='(hbnb)'
+
+    prompt = '(hbnb)'
 
     def my_errors(self, line, num_of_args):
-        """Display error messages to user
+        """Display error message to the user
+
         Description:
-        Displays output to the user based on the input command.
+        Displays output to the user based on input command
+
         """
-        classes = ["BaseModel", "User", "State", "City", "Amenity", "Place", "Review"]
+        classes = ["BaseModel", "User", "State", "City",
+                   "Amenity", "Place", "Review"]
 
-        msg = ["**Classcc"
+        msg = ["** class name is missing **",
+               "** class does not exist **",
+               "** instance id missing **",
+               "** no instance found **",
+               "** attribute name is missing **",
+               "** value is missing **"]
 
-    
 
