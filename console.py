@@ -34,8 +34,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
 
     def my_errors(self, line, num_of_args):
-        """Displays error messages to user
-
+        """Displays error messages to user.
         Args:
             line(any): gets user input using command line
             num_of_args(int): number of input arguments
@@ -126,16 +125,7 @@ class HBNBCommand(cmd.Cmd):
 
         """
         args[0] contains class name, creates a new instance
-        of that class updates 'updated_at' attribute,
-        and saves into JSON file
-        """
-        obj = eval(args[0])()
-        obj.save()
-
-        print(obj.id)
-
-    def do_show(self, line):
-        """Prints a string representation of an instance.
+        Prints a string representation of an instance.
 
         Args:
             line(line): to enter with command <class name> <id>
